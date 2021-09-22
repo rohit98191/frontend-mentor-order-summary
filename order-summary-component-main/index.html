@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      background-color: hsl(225, 100%, 94%);
+      background-image: url(./images/pattern-background-desktop.svg);
+      background-repeat: no-repeat;
+      font-size: 16px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .container{
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      max-width: 450px;
+      margin:auto;
+      border-radius: 20px;
+    }
+    .info{
+      display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    }
+    .button{
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 50px;
+    }
+
+    .button  > button{
+      font-size: 1.2rem;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: hsl(245deg 90% 76%);
+    color: white;
+    border: none;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    }
+    .button  > button:hover{
+      
+    background-color: hsl(245deg 90% 56%);
+    }
+    .button > span{
+      font-size: 1rem;
+    cursor: pointer;
+    }
+    .button > span:hover{
+      font-weight: 900;
+    }
+    .dim-color{
+      color:hsl(224, 23%, 55%);
+    }
+    .annual{
+      font-size: 0.80rem;
+    margin-bottom: 0.2rem;
+    }
+    .hero{
+      border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    }
+    .plan{
+      display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: auto;
+    align-items: center;
+    padding: 12px;
+    border-radius: 12px;
+    background-color: hsl(225, 100%, 98%);
+    }
+    .middle-tex >h6{
+      margin:auto;
+    }
+    .plan > a{
+      color: hsla(245, 75%, 52%, 0.932);
+    font-size: 0.9em;
+    font-weight: bold;
+    cursor: pointer;
+    }
+    .left-aside{
+      display: flex;
+    align-items: center;
+    gap: 1rem;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="img">
+    <img class="hero" width="100%" src="./images/illustration-hero.svg">
+  </div>
+  <div class="info">
+    <h2>Order Summary</h2>
+    <p class="dim-color">
+
+  You can now listen to millions of songs, audiobooks, and podcasts on any 
+  device anywhere you like!
+    </p>
+  </div>
+  <div class="plan">
+    <div class="left-aside">
+      <img src="./images/icon-music.svg">
+      <div class="middle-tex">
+        <h6 class="annual">Annual Plan</h6>
+        <span class="dim-color">$59.99/year</span>
+      </div>
+    </div>
+    <a>Change</a>
+  </div>
+  <div class="button">
+    <button>Proceed to Payment</button>
+    <span class="dim-color">Cancel Order</span>
+  </div>
+</div>  
+  <div class="attribution" style="margin-top:0.5rem">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Rohit Singh</a>.
+  </div>
+</body>
+</html>
